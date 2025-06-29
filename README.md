@@ -33,19 +33,15 @@ Dashboard
 ---
 
 ## Pipeline Flow
-Raw Table
+### 1. Raw Table
 Stores raw movie booking data from simulated file ingestion.
-
-CDC Stream + Bronze Layer
+### 2. CDC Stream + Bronze Layer
 A Snowflake Stream captures changes and loads them to the Bronze table every 1 minute via a scheduled Task.
-
-Silver Layer
+### 3. Silver Layer
 A Dynamic Table filters and cleans the CDC-enriched data.
-
-Gold Layer
+### 4. Gold Layer
 Another Dynamic Table performs aggregations (e.g., total bookings per movie or time window), refreshing every 2 minutes.
-
-Streamlit Dashboard
+### 5. Streamlit Dashboard
 Built using Snowpark and Streamlit in Snowflake to visualize real-time booking metrics.
 
 ---
