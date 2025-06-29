@@ -8,6 +8,7 @@ This project was built as part of hands-on learning to strengthen data engineeri
 ## Tech Stack
 
 - **Snowflake** (Streams, Tasks, Dynamic Tables)
+- **SQL**
 - **Python**
 - **Snowpark for Python**
 - **Streamlit (in Snowflake)**
@@ -28,7 +29,7 @@ Silver Table (Cleaned Data)
 Gold Table (KPIs)
    ↓ (Snowpark + Streamlit)
 Dashboard
-
+```
 ---
 
 ## Pipeline Flow
